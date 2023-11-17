@@ -1,47 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!-- icon  -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
+  <!-- Title -->
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/normalize.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
 
-  Your Result
-  76
-  of 100
+  <main class="container">
+    <section class="results">
+      <h1 class="results__heading">Your Result</h1>
+      <div class="results__result-container">
+        <p class="results__result">76 <span>of 100</span></p>
+      </div>
+      
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+      <p class="results__motivation">Great</p>
+      <p class="results__text">You scored higher than 65% of the people who have taken these tests.  </p>
+    </section>
+
+
+    <section class="summary sub-container">
+      <h2 class="summary__heading">Summary</h2>
+
+      <div class="widget">
+        <div class="widget__concept">
+          <img src="./assets/images/icon-reaction.svg" alt="icon reaction" class="widget__icon">
+          <h3 class="widget__heading-R">Reaction</h3>
+        </div>
+
+        <p class="widget__score">80 <span>/ 100</span></p>
+      </div>
+
+      <div class="widget">
+        <div class="widget__concept">
+          <img src="./assets/images/icon-memory.svg" alt="icon reaction" class="widget__icon">
+          <h3 class="widget__heading-M">Memory</h3>
+        </div>
+
+        <p class="widget__score">92 <span>/ 100</span></p>
+      </div>
+
+      <div class="widget">
+        <div class="widget__concept">
+          <img src="./assets/images/icon-verbal.svg" alt="icon reaction" class="widget__icon">
+          <h3 class="widget__heading-Ve">Verbal</h3>
+        </div>
+
+        <p class="widget__score">61 <span>/ 100</span></p>
+      </div>
+
+      <div class="widget">
+        <div class="widget__concept">
+          <img src="./assets/images/icon-visual.svg" alt="icon reaction" class="widget__icon">
+          <h3 class="widget__heading-Vi">Visual</h3>
+        </div>
+
+        <p class="widget__score">72 <span>/ 100</span></p>
+      </div>
+
+      <a href="#" class="summary__button">Continue</a>
+    </section>
+  </main>
   
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
+  <footer class="attribution container">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      Coded by <a href="https://www.frontendmentor.io/profile/Camoralesh27">Cristhian Morales</a>.
+  </footer>
 </body>
 </html>
