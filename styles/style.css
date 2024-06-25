@@ -190,11 +190,28 @@ p {
     gap: 1rem;
 }
 
+.widget__heading-Reaction {
+    color: var(--lightRed);
+}
+
+.widget__heading-Memory {
+    color: var(--orangeyYellow);
+}
+
+.widget__heading-Verbal {
+    color: var(--greenTeal);
+}
+
+.widget__heading-Visual {
+    color: var(--cobaltBlue);
+}
+
+/* 
 .widget__heading-R {
     color: var(--lightRed);
 }
 
-.widget__heading-M {
+.widget__heading-M{
     color: var(--orangeyYellow);
 }
 
@@ -205,6 +222,7 @@ p {
 .widget__heading-Vi {
     color: var(--cobaltBlue);
 }
+*/
 
 .widget__score {
     font-weight: 700;
