@@ -61,8 +61,9 @@ function cargarResultado(promedio) {
     result.innerHTML = '';
 
     const resultText = document.createElement('P');
+    resultText.classList.add('results__result')
     resultText.innerHTML = `
-        <p class="results__result">${promedio} <span>of 100</span></p>
+        ${promedio} <span>of 100</span>
     `;
 
     result.appendChild(resultText);
